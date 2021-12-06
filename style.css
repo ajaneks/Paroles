@@ -1,0 +1,21 @@
+.btn{
+ 
+  display: block;
+  border: 2px solid rgb(55, 168, 233);
+  font-size: 15px;
+  line-height: 1;
+  padding: 16px 30px; 
+  border-radius: 30px;
+  background:rgb(253, 253, 253);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.1s linear;
+  
+  }
+  .btn:hover{
+    background: rgb(55, 168, 233);
+  
+  }
+  .btn:active{
+    background: rgb(32, 149, 216);
+  }
