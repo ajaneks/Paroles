@@ -1,5 +1,39 @@
+table, th, td {
+  border: 1px solid black;  
+  text-align: center;   
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.center {
+margin-left: auto;
+margin-right: auto;
+}
+
+th, td {
+  text-align: left;
+  padding: 15px;
+  text-align: center;
+}
+
+thead {
+  background-color: rgb(76, 173, 230);
+  text-align: center;
+}
+
+body {
+background-color: rgb(255, 255, 255);
+text-align: center;
+}
+
+
 .btn{
- 
+ margin-left: auto;
+ margin-right: auto;
   display: block;
   border: 2px solid rgb(55, 168, 233);
   font-size: 15px;

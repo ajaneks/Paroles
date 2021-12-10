@@ -2,11 +2,12 @@ let ciparuSkaits;
 let variantuSkaits=5;
 let papildusVards;
 
-const vardi1=['liels','mazs','spalvains','interesants','ciets']
-const vardi2= ['juris','vista','krumins','andis','karlis']
-const vardi3= ['ir','skrien','lec','peld','mekle']
+const vardi1=['liels','mazs','spalvains','interesants','melns','balts','krasains','skaists'];
+const vardi2= ['juris','vista','krumins','andis','karlis','babris','martins','simons','ingus'];
+const vardi3= ['ir','skrien','lec','peld','mekle','krit','karajas','ed','gul'];
 
 let rindas = document.querySelector('.rindas');
+
 
 
 function randFunc(maxCipars) {
@@ -28,12 +29,14 @@ function generet() {
       let parole2=vardi2[rand2];
       let parole3=vardi3[rand3];
 
-      let parole=parole1+parole2+parole3;
+      let random= Math.ceil(Math.random()*10);
+
+      let parole=parole1+parole2+parole3+random;
      
 
 
 
-    //console.log(parole);
+    console.log(parole);
 
     rindas.innerHTML += `
  <tr>
