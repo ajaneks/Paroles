@@ -1,5 +1,5 @@
 let ciparuSkaits;
-let variantuSkaits=5;
+let variantuSkaits;
 let papildusVards;
 
 const vardi1=['liels','mazs','spalvains','interesants','melns','balts','krasains','skaists'];
@@ -15,9 +15,13 @@ function randFunc(maxCipars) {
     return random1;
   }
 
-
 function generet() {
+  ciparuSkaits = document.querySelector('#ciparuSkaits').value;
+  variantuSkaits = document.querySelector('#variantuSkaits').value;
+  papildusVards = document.querySelector('#papildusVards').value;
     rindas.innerHTML=""; //lai katru reizi izdzes
+
+    
     
     for (let i = 0; i < variantuSkaits; i++) {
 
@@ -29,14 +33,11 @@ function generet() {
       let parole2=vardi2[rand2];
       let parole3=vardi3[rand3];
 
-      let random= Math.ceil(Math.random()*10);
+      let random= Math.ceil(Math.random()*(Math.pow(10,ciparuSkaits)));
 
-      let parole=parole1+parole2+parole3+random;
-     
+      let parole=parole1+parole2+parole3+papildusVards+random;
 
-
-
-    console.log(parole);
+   // console.log(parole);
 
     rindas.innerHTML += `
  <tr>
@@ -47,3 +48,4 @@ function generet() {
 
  }
 }
+
